@@ -30,7 +30,7 @@
     "url": "https://github.com/codejamninja/google-closure-library"
   },
   "scripts": {
-    "build": "tsc -d --emitDeclarationOnly && cp -r src/*.d.ts lib",
+    "build": "sh scripts/build.sh && tsc -d --emitDeclarationOnly && cp -r src/@types lib",
     "clean": "git clean -fXd -e \\!node_modules -e \\!node_modules/**/* && jest --clearCache",
     "clean:purge": "jest --clearCache && git clean -fXd",
     "format": "prettier --write ./**/*.{json,md,scss,yaml,yml,js,jsx,ts,tsx} --ignore-path .gitignore",
@@ -48,6 +48,7 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb-typescript": "^4.0.0",
     "eslint-config-jam": "^0.2.12",
+    "google-closure-library": "^20190929.0.0",
     "jest": "^24.8.0",
     "tsc": "^1.20150623.0",
     "typescript": "^3.5.1"
@@ -61,5 +62,6 @@
   "jest": {
     "testRegex": "tests(/|/.*/)[^_/]*[jt]sx?$",
     "verbose": true
-  }
+  },
+  "types": "lib/@types/index.d.ts"
 }

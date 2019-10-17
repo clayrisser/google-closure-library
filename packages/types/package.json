@@ -30,7 +30,7 @@
     "url": "https://github.com/codejamninja/google-closure-library"
   },
   "scripts": {
-    "build": "sh scripts/build.sh && tsc -d --emitDeclarationOnly && cp -r src/@types lib",
+    "build": "sh scripts/build.sh && npm run format && ts-ignore && tsc -d --emitDeclarationOnly && cp -r src/@types lib",
     "clean": "git clean -fXd -e \\!node_modules -e \\!node_modules/**/* && jest --clearCache",
     "clean:purge": "jest --clearCache && git clean -fXd",
     "format": "prettier --write ./**/*.{json,md,scss,yaml,yml,js,jsx,ts,tsx} --ignore-path .gitignore",
@@ -42,16 +42,17 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/jest": "^24.0.13",
-    "@typescript-eslint/eslint-plugin": "^1.9.0",
-    "@typescript-eslint/parser": "^1.9.0",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-typescript": "^4.0.0",
-    "eslint-config-jam": "^0.2.12",
+    "@types/jest": "^24.0.19",
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-typescript": "^5.0.0",
+    "eslint-config-jam": "^0.2.20",
     "google-closure-library": "^20190929.0.0",
-    "jest": "^24.8.0",
+    "jest": "^24.9.0",
+    "ts-ignore": "0.0.3",
     "tsc": "^1.20150623.0",
-    "typescript": "^3.5.1"
+    "typescript": "^3.6.4"
   },
   "engines": {
     "node": ">=6.0.0"

@@ -1,6 +1,6 @@
 {
   "name": "@google-closure-library/types",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "google closure library typescript types",
   "keywords": [
     "@google-closure-library/types",
@@ -39,7 +39,6 @@
     "start": "babel-node src --extensions \".ts,.tsx\"",
     "test": "npm run lint && jest"
   },
-  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^24.0.19",
     "@typescript-eslint/eslint-plugin": "^2.4.0",

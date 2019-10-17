@@ -1,3 +1,6 @@
 {
-  "extends": ["jam/typescript/base"]
+  "extends": ["jam/base"],
+  "globals": {
+    "goog": true
+  }
 }

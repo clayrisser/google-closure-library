@@ -1,6 +1,6 @@
 {
   "name": "@google-closure-library/goog.crypt",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "nodejs and typescript binding for goog.crypt",
   "keywords": [
     "@google-closure-library/goog.crypt",

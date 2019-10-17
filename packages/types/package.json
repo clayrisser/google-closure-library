@@ -1,6 +1,6 @@
 {
   "name": "@google-closure-library/types",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "google closure library typescript types",
   "keywords": [
     "@google-closure-library/types",

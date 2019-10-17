@@ -46,7 +46,7 @@
   "dependencies": {
     "core-js": "^3.1.3",
     "google-closure-library": "^20190929.0.0",
-    "tsdpm": "^0.1.10"
+    "tsdpm": "^0.1.11"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",

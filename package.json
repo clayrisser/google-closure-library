@@ -17,5 +17,8 @@
   "devDependencies": {
     "lerna": "^3.16.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@google-closure-library/types": "^0.0.2"
+  }
 }

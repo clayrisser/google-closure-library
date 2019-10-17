@@ -19,4 +19,4 @@ find \
   grep -v /goog/testing/messaging/ |
   xargs clutz -o ../src/@types/all.d.ts --closure_env BROWSER
 
-sed -i "s/goog:goog\.\([^A-Z.]\+\)'/@google-closure-library\/\1'/g" ../src/@types/all.d.ts
+sed -i "s/goog:goog\.\([^A-Z.]\+\)'/@google-closure-library\/goog.\1'/g" ../src/@types/all.d.ts

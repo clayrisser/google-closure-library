@@ -4,6 +4,8 @@
 
 > google closure library for node and typescript
 
+![](assets/google-closure-library.png)
+
 Please ★ this repo if you found it useful ★ ★ ★
 
 ## Features
